@@ -13,7 +13,7 @@ const WRITE_USER   = process.env.ODOO_WRITE_USER;
 const WRITE_KEY    = process.env.ODOO_WRITE_KEY;
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || "https://claude.ai";
 
-app.use(cors({ origin: ALLOWED_ORIGIN }));
+app.use(cors());
 app.use(express.json());
 
 // Health check
